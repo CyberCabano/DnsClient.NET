@@ -162,7 +162,7 @@ namespace DnsClient.Protocol
             SignatureAsString = Convert.ToBase64String(signature);
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(
                 CultureInfo.InvariantCulture,

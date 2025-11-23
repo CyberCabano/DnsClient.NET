@@ -51,7 +51,7 @@ namespace DnsClient.Protocol
             NewName = name ?? throw new ArgumentNullException(nameof(name));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return NewName.Value;
         }

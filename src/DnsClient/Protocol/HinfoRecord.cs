@@ -60,7 +60,7 @@ namespace DnsClient.Protocol
             OS = os;
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return $"\"{Cpu}\" \"{OS}\"";
         }

@@ -79,7 +79,7 @@ namespace DnsClient.Protocol
             Weight = weight;
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return $"{Priority} {Weight} \"{Target}\"";
         }

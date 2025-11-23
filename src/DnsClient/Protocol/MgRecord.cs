@@ -50,7 +50,7 @@ namespace DnsClient.Protocol
             MgName = domainName ?? throw new ArgumentNullException(nameof(domainName));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return MgName.Value;
         }

@@ -229,7 +229,7 @@ namespace DnsClient.Protocol
             Replacement = replacement ?? throw new ArgumentNullException(nameof(replacement));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(
                 CultureInfo.InvariantCulture,

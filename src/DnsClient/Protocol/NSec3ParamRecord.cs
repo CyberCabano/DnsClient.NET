@@ -92,7 +92,7 @@ namespace DnsClient.Protocol
             SaltAsString = Salt.Length == 0 ? "-" : string.Join(string.Empty, Salt.Select(b => b.ToString("X2", CultureInfo.InvariantCulture)));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(
                 CultureInfo.InvariantCulture,

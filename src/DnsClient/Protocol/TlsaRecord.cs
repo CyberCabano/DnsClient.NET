@@ -92,7 +92,7 @@ namespace DnsClient.Protocol
             CertificateAssociationDataAsString = string.Join(string.Empty, certificateAssociationData.Select(b => b.ToString("X2", CultureInfo.InvariantCulture)));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(
                 CultureInfo.InvariantCulture,

@@ -73,7 +73,7 @@ namespace DnsClient.Protocol
             EmailBox = emailBox ?? throw new ArgumentNullException(nameof(emailBox));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return $"{RMailBox} {EmailBox}";
         }

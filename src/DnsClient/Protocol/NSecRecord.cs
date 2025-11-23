@@ -78,7 +78,7 @@ namespace DnsClient.Protocol
             TypeBitMaps = ReadBitmap(typeBitMaps).OrderBy(p => p).Select(p => (ResourceRecordType)p).ToArray();
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(CultureInfo.InvariantCulture, "{0} {1}", NextDomainName, string.Join(" ", TypeBitMaps));
         }

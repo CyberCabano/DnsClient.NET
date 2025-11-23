@@ -66,7 +66,7 @@ namespace DnsClient.Protocol
             Exchange = domainName ?? throw new ArgumentNullException(nameof(domainName));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(CultureInfo.InvariantCulture, "{0} {1}", Preference, Exchange);
         }

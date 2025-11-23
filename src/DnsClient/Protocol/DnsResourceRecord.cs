@@ -60,7 +60,7 @@ namespace DnsClient.Protocol
         /// <see cref="ToString(int)"/> uses this to compose the full string value of this instance.
         /// </summary>
         /// <returns>A string representing this record.</returns>
-        private protected abstract string RecordToString();
+        public abstract string RecordToString();
     }
 
     /// <summary>

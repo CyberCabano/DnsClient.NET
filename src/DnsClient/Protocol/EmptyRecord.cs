@@ -20,7 +20,7 @@ namespace DnsClient.Protocol
         {
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Empty;
         }

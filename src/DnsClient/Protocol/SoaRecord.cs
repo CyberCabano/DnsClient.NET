@@ -168,7 +168,7 @@ namespace DnsClient.Protocol
             Minimum = minimum;
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(
                 CultureInfo.InvariantCulture,

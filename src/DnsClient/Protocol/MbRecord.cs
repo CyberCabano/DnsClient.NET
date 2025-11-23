@@ -48,7 +48,7 @@ namespace DnsClient.Protocol
             MadName = domainName ?? throw new ArgumentNullException(nameof(domainName));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return MadName.Value;
         }

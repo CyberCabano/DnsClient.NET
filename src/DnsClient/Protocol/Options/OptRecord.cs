@@ -141,7 +141,7 @@ namespace DnsClient.Protocol.Options
             Data = data;
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return $"OPT {RecordClass}.";
         }

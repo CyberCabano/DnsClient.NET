@@ -35,7 +35,7 @@ namespace DnsClient.Protocol
             Address = address ?? throw new ArgumentNullException(nameof(address));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return Address.ToString();
         }

@@ -45,7 +45,7 @@ namespace DnsClient.Protocol
         /// </summary>
         public string Fingerprint { get; }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return $"{(int)Algorithm} {(int)FingerprintType} {Fingerprint}";
         }

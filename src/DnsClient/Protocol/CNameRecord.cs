@@ -52,7 +52,7 @@ namespace DnsClient.Protocol
             CanonicalName = canonicalName ?? throw new ArgumentNullException(nameof(canonicalName));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return CanonicalName.Value;
         }

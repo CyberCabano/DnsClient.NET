@@ -167,7 +167,7 @@ namespace DnsClient.Protocol
             Target = target ?? throw new ArgumentNullException(nameof(target));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(
                 CultureInfo.InvariantCulture,

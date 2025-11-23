@@ -70,7 +70,7 @@ namespace DnsClient.Protocol
             DigestAsString = string.Join(string.Empty, digest.Select(b => b.ToString("X2", CultureInfo.InvariantCulture)));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return string.Format(CultureInfo.InvariantCulture, "{0} {1} {2} {3}", KeyTag, Algorithm, DigestType, DigestAsString);
         }

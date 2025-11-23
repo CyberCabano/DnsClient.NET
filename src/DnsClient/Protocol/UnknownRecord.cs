@@ -52,7 +52,7 @@ namespace DnsClient.Protocol
             DataAsString = Convert.ToBase64String(data);
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return DataAsString;
         }

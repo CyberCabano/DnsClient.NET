@@ -53,7 +53,7 @@ namespace DnsClient.Protocol
             PtrDomainName = ptrDomainName ?? throw new ArgumentNullException(nameof(ptrDomainName));
         }
 
-        private protected override string RecordToString()
+        public override string RecordToString()
         {
             return PtrDomainName.Value;
         }
